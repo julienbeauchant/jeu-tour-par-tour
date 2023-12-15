@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(/img/backGroundImg.jpg) ;
+    background-size: cover;
+    filter: blur(1px); */
+}
+
+.backgroundContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url('/img/backGroundImg.jpg');
+    background-size: cover;
+    filter: blur(1.5px);
+  }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cssTourParTour/tourParTour.css">
+    <link rel="stylesheet" href="/cssTourParTour/globalTourParTour.css">
+    <title>Jeu de combat tour par tour</title>
+</head>
+
+<body>
+    <div class="backgroundContainer"></div>
+
+    <!-- 1ere partie, choix du personnage pour commencer la partie -->
+
+    <div class="positionChoice">
+        <div class="choice">
+            <!-- <div class="title">
+                <h1>choisissez votre personnage pour commencer le combat</h1>
+            </div> -->
+            <div class="container">
+                <div class="choiceCharacteres">
+                    <img class="amberPlayer1" src="img/multi/multiAmber.webp" alt="">
+                    <img class="laylaPlayer1" src="img/multi/multiLayla.webp" alt="">
+                    <img class="barbaraPlayer1" src="img/multi/multiBarbara.webp" alt="">
+                    <img class="yanfeiPlayer1" src="img/multi/multiYanfei.webp" alt="">
+                </div>
+                <div class="symbolStart">
+                    <img src="img/symbol/symbolWhite.png" alt="">
+                </div>
+                <div class="choiceCharacteres2">
+                    <img class="amberPlayer2" src="img/multi/multiAmber.webp" alt="">
+                    <img class="laylaPlayer2" src="img/multi/multiLayla.webp" alt="">
+                    <img class="barbaraPlayer2" src="img/multi/multiBarbara.webp" alt="">
+                    <img class="yanfeiPlayer2" src="img/multi/multiYanfei.webp" alt="">
+                </div>
+            </div>
+            <button>fight</button>
+        </div>
+    </div>
+
+    <!-- 2eme partie, player1 -->
+
+    <main>
+        <div class="containerCard" id="containerCard1">
+            <section class="sectionCharacters">
+                <img class="amber" src="/img/items/itemAmber.webp" alt="">
+                <img class="layla" src="/img/items/itemLayla.webp" alt="">
+                <img class="barbara" src="/img/items/itemBarbara.webp" alt="">
+                <img class="yanfei" src="/img/items/itemYanfei.webp" alt="">
+            </section>
+            <div class="card" id="card1">
+                <div class="cardImg">
+                    <!-- <img id="charactereImg" src="" alt=""> -->
+                </div>
+                <div class="atqCompetence">
+                    <section class="atq">
+                        <div class="atqNormal">
+                            <!-- <img id="changeAtqNormal" src="" alt=""> -->
+                        </div>
+                    </section>
+                    <section class="competence">
+                        <div class="competenceSpecial">
+                            <!-- <img id="changeSkill" src="" alt=""> -->
+                        </div>
+                        <div class="ulti">
+                            <!-- <img id="changeUlti" src="" alt=""> -->
+                        </div>
+                    </section>
+                </div>
+                <div class="positionPvBarre">
+                    <section class="pvBarre">
+                        <div class="pv"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- séparateur entre la card1 et la card2 -->
+
+        <div class="symbol">
+            <img src="img/symbol/symbolWhite.png" alt="">
+        </div>
+
+        <!-- 2eme partie, player2 -->
+
+        <div class="containerCard" id="containerCard2">
+            <div class="card" id="card2">
+                <div class="cardImg2">
+                    <!-- <img id="charactereImg2" src="" alt=""> -->
+                </div>
+                <div class="atqCompetence">
+                    <section class="atq">
+                        <div class="atqNormal2">
+                            <!-- <img id="changeAtqNormal2" src="" alt=""> -->
+                        </div>
+                    </section>
+                    <section class="competence">
+                        <div class="competenceSpecial2">
+                            <!-- <img id="changeSkill2" src="" alt=""> -->
+                        </div>
+                        <div class="ulti2">
+                            <!-- <img id="changeUlti2" src="" alt=""> -->
+                        </div>
+                    </section>
+                </div>
+                <div class="positionPvBarre">
+                    <section class="pvBarre">
+                        <div class="pv"></div>
+                    </section>
+                </div>
+            </div>
+            <section class="sectionCharacters">
+                <img class="amber2" src="/img/items/itemAmber.webp" alt="">
+                <img class="layla2" src="/img/items/itemLayla.webp" alt="">
+                <img class="barbara2" src="/img/items/itemBarbara.webp" alt="">
+                <img class="yanfei2" src="/img/items/itemYanfei.webp" alt="">
+            </section>
+        </div>
+    </main>
+
+    <script src="tourParTour.js"></script>
+</body>
+
+</html>

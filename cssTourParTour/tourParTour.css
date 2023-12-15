@@ -1,0 +1,255 @@
+/* 1ere partie, choix du personnage pour commencer la partie -------------------------------------------- */ 
+
+.positionChoice {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+.choice {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    width: 10%;
+    height: 5%;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0.5px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.7);
+    color: black;
+    font-size: 100%;
+}
+
+button:hover {
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.5s ;
+    color: white;
+}
+
+.choiceCharacteres,
+.choiceCharacteres2 {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.choiceCharacteres2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.choiceCharacteres img,
+.choiceCharacteres2 img {
+    width: 15%;
+    height: 50%;
+    object-fit: contain;
+    cursor: pointer;
+    border: 0.5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.choiceCharacteres img:hover,
+.choiceCharacteres2 img:hover {
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255, 0.7);
+    transition: 0.5s ;
+}
+
+.symbolStart {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.symbolStart img{
+    width: 100%;
+    height: 35%;
+    object-fit: contain;
+}
+
+.grayed-out {
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+/* 2eme partie, le combat -------------------------------------------- */
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.containerCard {
+    width: 30%;
+    height: 70%;
+    display: flex;
+}
+
+.sectionCharacters {
+    width: 25%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectionCharacters img {
+    width: 100%;
+    height: 25%;
+    object-fit: contain;
+}
+
+.sectionCharacters img:hover {
+    cursor: pointer;
+    transform:scale(1.10);
+    transition: 0.5s ;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(221, 221, 221, 0.5);
+}
+
+.cardImg,
+.cardImg2 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImg img,
+.cardImg2 img {
+    width: 95%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.atqCompetence {
+    width: 95%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: black; */
+}
+
+.atq,
+.competence {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: white; */
+}
+
+.atqNormal img,
+.atqNormal2 img,
+.competenceSpecial img,
+.competenceSpecial2 img,
+.ulti img,
+.ulti2 img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.atqNormal,
+.atqNormal2,
+.competenceSpecial,
+.competenceSpecial2,
+.ulti,
+.ulti2 {
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 255, 255, 0.5); */
+}
+
+.positionPvBarre {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.pvBarre {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pv {
+    width: 100%;
+    height: 35%;
+    /* clip-path: circle(7px); */
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.7);
+    background-color: rgb(54, 225, 26);
+    transition: width 0.3s ease; /* Transition fluide lors des changements de largeur */
+}
+
+.symbol {
+    width: 15%;
+    height: 15%;
+}
+
+.symbol img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
